@@ -1,0 +1,8 @@
+/Users/belieber/Code/value_or_error/obj/Debug/netcoreapp2.0/value_or_error.csproj.CoreCompileInputs.cache
+/Users/belieber/Code/value_or_error/obj/Debug/netcoreapp2.0/value_or_error.AssemblyInfoInputs.cache
+/Users/belieber/Code/value_or_error/obj/Debug/netcoreapp2.0/value_or_error.AssemblyInfo.cs
+/Users/belieber/Code/value_or_error/bin/Debug/netcoreapp2.0/value_or_error.deps.json
+/Users/belieber/Code/value_or_error/bin/Debug/netcoreapp2.0/value_or_error.dll
+/Users/belieber/Code/value_or_error/bin/Debug/netcoreapp2.0/value_or_error.pdb
+/Users/belieber/Code/value_or_error/obj/Debug/netcoreapp2.0/value_or_error.dll
+/Users/belieber/Code/value_or_error/obj/Debug/netcoreapp2.0/value_or_error.pdb
