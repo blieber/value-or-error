@@ -1,6 +1,6 @@
 using System;
 
-namespace ErrorFlow
+namespace ValueOrError.Core
 {
     public interface IValueOrError<out TValue, out TError>
     {

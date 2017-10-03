@@ -1,6 +1,6 @@
 using System;
 
-namespace ErrorFlow
+namespace ValueOrError.Core
 {
     public partial struct ValueOrError<TValue, TError> : IEquatable<ValueOrError<TValue, TError>>
     {

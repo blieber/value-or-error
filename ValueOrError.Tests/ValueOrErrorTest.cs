@@ -1,8 +1,8 @@
 using System;
 using Xunit;
-using ErrorFlow;
+using ValueOrError.Core;
 
-namespace ErrorFlow.Tests
+namespace ValueOrError.Core.Tests
 {
     public class ValueOrErrorTests
     {
