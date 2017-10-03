@@ -5,7 +5,7 @@ using ValueOrError.Linq;
 
 namespace ValueOrError.Linq.Tests
 {
-    public class IValueOrErrorLinqTests
+    public class IValueOrErrorOnSuccessOnErrorTest
     {
         public class FromValue 
         {
@@ -24,6 +24,24 @@ namespace ValueOrError.Linq.Tests
                 var valueOrError = ValueOrError<bool, bool>.FromValue(true);
                 var result = valueOrError.OnError(error => !error);
                 Assert.Equal(valueOrError, result);
+            }
+
+            [Fact]
+            public void OnSuccessAction()
+            {
+                var result = false;
+                var valueOrError = ValueOrError<bool, bool>.FromValue(true);
+                valueOrError.OnSuccess(value => { result = value; });
+                Assert.True(result);
+            }
+
+            [Fact]
+            public void OnErrorAction()
+            {
+                var result = false;
+                var valueOrError = ValueOrError<bool, bool>.FromValue(true);
+                valueOrError.OnError(error => { result = error; });
+                Assert.False(result);
             }
         }
 
@@ -44,6 +62,24 @@ namespace ValueOrError.Linq.Tests
                 var result = valueOrError.OnError(error => !error);
                 Assert.NotEqual(valueOrError, result);
                 Assert.Equal(!valueOrError.error, result.error);
+            }
+
+            [Fact]
+            public void OnSuccessAction()
+            {
+                var result = false;
+                var valueOrError = ValueOrError<bool, bool>.FromError(true);
+                valueOrError.OnSuccess(value => { result = value; });
+                Assert.False(result);
+            }
+
+            [Fact]
+            public void OnErrorAction()
+            {
+                var result = false;
+                var valueOrError = ValueOrError<bool, bool>.FromError(true);
+                valueOrError.OnError(error => { result = error; });
+                Assert.True(result);
             }
         }
     }

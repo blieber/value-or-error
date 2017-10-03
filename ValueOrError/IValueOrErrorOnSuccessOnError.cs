@@ -3,10 +3,10 @@ using ValueOrError.Core;
 
 namespace ValueOrError.Linq
 {
-    public static class OnSuccessOnErrorExtensions
+    public static class IValueOrErrorOnSuccessOnError
     {
         public static ValueOrError<T, TError> OnSuccess<TValue, TError, T>(
-            this ValueOrError<TValue, TError> valueOrError, 
+            this IValueOrError<TValue, TError> valueOrError, 
             Func<TValue, T> onSuccess)
         {
             if (valueOrError.hasValue)
@@ -21,7 +21,7 @@ namespace ValueOrError.Linq
         }
 
         public static ValueOrError<TValue, T> OnError<TValue, TError, T>(
-            this ValueOrError<TValue, TError> valueOrError, 
+            this IValueOrError<TValue, TError> valueOrError, 
             Func<TError, T> onError)
         {
             if (valueOrError.hasValue)
@@ -32,6 +32,26 @@ namespace ValueOrError.Linq
             {
                 var error = onError(valueOrError.error);
                 return ValueOrError<TValue, T>.FromError(error);
+            }
+        }
+
+        public static void OnSuccess<TValue, TError>(
+            this IValueOrError<TValue, TError> valueOrError, 
+            Action<TValue> onSuccess)
+        {
+            if (valueOrError.hasValue)
+            {
+                onSuccess(valueOrError.value);
+            }
+        }
+
+        public static void OnError<TValue, TError>(
+            this IValueOrError<TValue, TError> valueOrError, 
+            Action<TError> onError)
+        {
+            if (!valueOrError.hasValue)
+            {
+                onError(valueOrError.error);
             }
         }
     }
