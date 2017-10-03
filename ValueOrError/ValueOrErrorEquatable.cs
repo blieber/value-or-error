@@ -7,7 +7,7 @@ namespace ValueOrError.Core
         public bool Equals(ValueOrError<TValue, TError> other)
         {
             return (this.hasValue && other.hasValue && this.value.Equals(other.value)) ||
-                   (!this.hasValue && !other.hasValue && this.error.Equals(other.value));
+                   (!this.hasValue && !other.hasValue && this.error.Equals(other.error));
         }
 
         public override bool Equals(object other)
