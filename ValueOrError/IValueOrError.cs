@@ -1,3 +1,5 @@
+using System;
+
 namespace ErrorFlow
 {
     public interface IValueOrError<out TValue, out TError>

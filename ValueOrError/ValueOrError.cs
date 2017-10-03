@@ -2,7 +2,7 @@ using System;
 
 namespace ErrorFlow
 {
-    public class ValueOrError<TValue, TError> : IValueOrError<TValue, TError>
+    public partial struct ValueOrError<TValue, TError> : IValueOrError<TValue, TError>
     {
         private readonly IValueOrError<TValue, TError> valueOrError;
 
@@ -27,7 +27,7 @@ namespace ErrorFlow
 
         public bool hasValue => valueOrError.hasValue;
 
-        private class ValueOrError_Value : IValueOrError<TValue, TError>
+        private struct ValueOrError_Value : IValueOrError<TValue, TError>
         {
             public ValueOrError_Value(TValue value)
             {
@@ -47,7 +47,7 @@ namespace ErrorFlow
             public bool hasValue => true;
         }
 
-        private class ValueOrError_Error : IValueOrError<TValue, TError>
+        private struct ValueOrError_Error : IValueOrError<TValue, TError>
         {
             public ValueOrError_Error(TError error)
             {
