@@ -1,4 +1,4 @@
-namespace ValueOrError
+namespace ErrorFlow
 {
     public interface IValueOrError<out TValue, out TError>
     {

@@ -1,4 +1,6 @@
-namespace ValueOrError
+using System;
+
+namespace ErrorFlow
 {
     public class ValueOrError<TValue, TError> : IValueOrError<TValue, TError>
     {
@@ -11,12 +13,12 @@ namespace ValueOrError
 
         public static ValueOrError<TValue, TError> FromValue(TValue value)
         {
-            return ValueOrError(ValueOrError_Value(value));
+            return new ValueOrError<TValue, TError>(new ValueOrError_Value(value));
         }
 
         public static ValueOrError<TValue, TError> FromError(TError error)
         {
-            return ValueOrError(ValueOrError_Error(error));
+            return new ValueOrError<TValue, TError>(new ValueOrError_Error(error));
         }
 
         public TValue value => valueOrError.value;
