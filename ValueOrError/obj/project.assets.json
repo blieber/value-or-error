@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/belieber/Code/value_or_error/value_or_error.csproj",
-      "projectName": "value_or_error",
-      "projectPath": "/Users/belieber/Code/value_or_error/value_or_error.csproj",
+      "projectUniqueName": "/Users/belieber/Code/value_or_error/ValueOrError/ValueOrError.csproj",
+      "projectName": "ValueOrError",
+      "projectPath": "/Users/belieber/Code/value_or_error/ValueOrError/ValueOrError.csproj",
       "packagesPath": "/Users/belieber/.nuget/packages/",
-      "outputPath": "/Users/belieber/Code/value_or_error/obj/",
+      "outputPath": "/Users/belieber/Code/value_or_error/ValueOrError/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

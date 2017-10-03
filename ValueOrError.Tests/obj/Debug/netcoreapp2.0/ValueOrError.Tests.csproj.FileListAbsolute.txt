@@ -1,0 +1,15 @@
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/obj/Debug/netcoreapp2.0/ValueOrError.Tests.csproj.CoreCompileInputs.cache
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/obj/Debug/netcoreapp2.0/ValueOrError.Tests.AssemblyInfoInputs.cache
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/obj/Debug/netcoreapp2.0/ValueOrError.Tests.AssemblyInfo.cs
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/bin/Debug/netcoreapp2.0/ValueOrError.Tests.deps.json
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/bin/Debug/netcoreapp2.0/ValueOrError.Tests.runtimeconfig.json
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/bin/Debug/netcoreapp2.0/ValueOrError.Tests.runtimeconfig.dev.json
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/bin/Debug/netcoreapp2.0/ValueOrError.Tests.dll
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/bin/Debug/netcoreapp2.0/ValueOrError.Tests.pdb
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/bin/Debug/netcoreapp2.0/ValueOrError.dll
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/bin/Debug/netcoreapp2.0/ValueOrError.pdb
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/obj/Debug/netcoreapp2.0/ValueOrError.Tests.dll
+/Users/belieber/Code/value_or_error/ValueOrError.Tests/obj/Debug/netcoreapp2.0/ValueOrError.Tests.pdb

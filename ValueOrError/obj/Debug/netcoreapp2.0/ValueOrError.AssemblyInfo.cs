@@ -7,11 +7,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("value_or_error")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ValueOrError")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Package Description")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("value_or_error")]
-[assembly: System.Reflection.AssemblyTitleAttribute("value_or_error")]
+[assembly: System.Reflection.AssemblyProductAttribute("ValueOrError")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ValueOrError")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
